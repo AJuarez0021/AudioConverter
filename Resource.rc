@@ -1,0 +1,218 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Mexican) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  250, 100, 199, 146
+STYLE WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "Audio Converter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Siguiente",IDC_NEXT,7,125,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancelar",IDC_CANCEL,142,125,50,14
+    GROUPBOX        "Opciones",IDC_STATIC,7,7,185,110
+    CONTROL         "Convertir Mp2 a Wav",IDC_MP2TOWAV,"Button",
+                    BS_AUTORADIOBUTTON,16,86,82,10
+    CONTROL         "Convertir Mp3 a Wav",IDC_MP3TOWAV,"Button",
+                    BS_AUTORADIOBUTTON,16,102,82,10
+    CONTROL         "Convertir Wma a Wav",IDC_WMATOWAV,"Button",
+                    BS_AUTORADIOBUTTON,16,56,82,10
+    CONTROL         "Convertir Cda a Wav",IDC_CDATOWAV,"Button",
+                    BS_AUTORADIOBUTTON,16,71,82,10
+    DEFPUSHBUTTON   "Acerca de",IDC_ABOUT,74,125,50,14
+    CONTROL         "Convertir Cda a Mp3",IDC_CDATOMP3,"Button",
+                    BS_AUTORADIOBUTTON,103,71,82,10
+    CONTROL         "Convertir Wav a Mp3",IDC_WAVTOMP3,"Button",
+                    BS_AUTORADIOBUTTON,103,103,82,10
+    ICON            IDI_ICON1,IDC_STATIC,29,25,20,20,WS_BORDER
+    CONTROL         "Convertir Wma a Mp3",IDC_WMATOMP3,"Button",
+                    BS_AUTORADIOBUTTON,103,56,82,10
+    LTEXT           "Audio Converter",IDC_STATIC,75,22,53,9
+    LTEXT           "Version: 0.1",IDC_STATIC,81,36,43,9
+    CONTROL         "Convertir Mp2 a Mp3",IDC_MP2TOMP3,"Button",
+                    BS_AUTORADIOBUTTON,103,86,82,10
+END
+
+IDD_CONVERTER DIALOG DISCARDABLE  200, 100, 186, 180
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Convertir",IDC_CONVERTER,7,159,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancelar",IDC_CONVERTER_CANCEL,129,159,50,14
+    GROUPBOX        "Archivo de Entrada",IDC_STATIC,7,7,172,37
+    GROUPBOX        "Archivo de Salida",IDC_STATIC,7,51,172,37
+    PUSHBUTTON      "...",IDC_OPEN,15,20,19,13
+    EDITTEXT        IDC_IN,45,21,122,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_OPEN2,15,65,19,13,WS_DISABLED
+    EDITTEXT        IDC_OUT,45,64,122,14,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "Ayuda",IDC_CONVERTER_HELP,68,159,50,14
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",0x0,18,118,
+                    151,16
+    GROUPBOX        "Progreso",IDC_STATIC,7,92,172,61
+    LTEXT           "",IDC_STATIC_ACCION,19,139,152,9
+    LTEXT           "",IDC_STATIC_TEXT,19,105,138,8
+END
+
+IDD_CONVERTER2 DIALOGEX 200, 100, 231, 193
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Convertir",IDC_CONV2_CONVERTER,7,172,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancelar",IDC_CONV2_CANCEL,118,172,50,14
+    GROUPBOX        "Archivo de Salida",IDC_STATIC,7,7,217,42
+    PUSHBUTTON      "...",IDC_CONV2_SAVE,17,23,18,15
+    EDITTEXT        IDC_CONV2_FILENAME,42,23,169,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Drive del CD Rom",IDC_STATIC,7,57,106,38
+    GROUPBOX        "Numero de Track",IDC_STATIC,121,57,103,38
+    COMBOBOX        IDC_CONV2_TRACK,153,72,37,43,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Cargar CD",IDC_CONV2_LOADCD,63,172,50,14
+    GROUPBOX        "Progreso",IDC_STATIC,7,100,217,63
+    CONTROL         "Progress1",IDC_CONV2_PROGRESS1,"msctls_progress32",0x0,
+                    31,124,166,18,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CONV2_DRIVE,39,72,37,43,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ayuda",IDC_CONV2_HELP2,174,172,50,14
+    LTEXT           "",IDC_CONV2_ACTION,33,147,166,8
+    LTEXT           "",IDC_CONV2_STATIC,32,114,171,8
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  200, 100, 186, 103
+STYLE DS_CONTEXTHELP | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca de"
+FONT 8, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDC_ABOUT_OK,61,82,50,14
+    ICON            IDI_ICON1,IDC_STATIC,25,23,21,20,WS_BORDER
+    GROUPBOX        "",IDC_STATIC,7,7,172,71
+    LTEXT           "Audio Converter",IDC_STATIC,71,21,53,9
+    LTEXT           "Version 0.1",IDC_STATIC,77,33,40,9
+    LTEXT           "Por A. Juarez",IDC_STATIC,73,45,45,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_CONVERTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_CONVERTER2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "icon1.ico"
+IDI_ICON2               ICON    DISCARDABLE     "icon2.ico"
+IDI_ICON3               ICON    DISCARDABLE     "ICON3.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "default1.bin"
+#endif    // Spanish (Mexican) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
